@@ -1,0 +1,175 @@
+@import url("root.css");
+@import url("fonts.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  font-family: var(--main-font);
+}
+body,
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+.row-cont {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.global-width {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+}
+.left-colm {
+  color: white;
+}
+.left-colm {
+  max-width: 230px;
+  width: 100%;
+  height: inherit;
+  padding: 20px;
+  background-color: var(--main-color);
+}
+.left-colm > section {
+  position: relative;
+}
+.left-colm #imageholder {
+  position: absolute;
+  top: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: aliceblue;
+}
+.left-colm .info-container {
+  list-style: none;
+  margin-top: 250px;
+}
+.left-colm .info-container > li {
+  margin-top: 30px;
+}
+.left-colm .info-container > li > section > h2 {
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+}
+.left-colm .info-container .info-list-conatiner {
+  list-style: none;
+}
+.left-colm .info-container .info-list-conatiner > li {
+  padding: 8px 0;
+}
+.left-colm .info-container .info-list-conatiner > li > section {
+  margin-top: 20px;
+}
+.education-list > li > section > h3 {
+  font-size: 12px;
+  font-weight: 300;
+}
+.education-list > li > section > p:nth-child(2) {
+  font-size: 15px;
+  font-weight: bold;
+}
+.expertise-list > li {
+  list-style: circle;
+  transform: translateX(20px);
+}
+
+/* right corner */
+.right-colm {
+  padding: 30px;
+}
+.right-colm .section1 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.right-colm .section1 > h2 {
+  font-size: 43px;
+}
+.right-colm .section1 > p:nth-child(2) {
+  font-size: 23px;
+}
+.right-colm .section1 > p:nth-child(3) {
+  text-align: justify;
+}
+.section2 {
+  margin-top: 90px;
+}
+.section2 > h2 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+.timeline {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+}
+.timeline .timelinephase {
+  width: 2px;
+  background-color: black;
+  height: inherit;
+  position: relative;
+}
+#dot1,
+#dot2,
+#dot3 {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border-radius: 50px;
+  border: 2px solid black;
+  background-color: white;
+  transform: translateX(-19px);
+}
+#dot2 {
+  top: 36%;
+}
+#dot3 {
+  top: 71%;
+}
+.timeline .phases {
+  list-style: none;
+}
+.timeline .phases > li > section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.timeline .phases > li > section > p:nth-child(3) {
+  text-align: justify;
+}
+.timeline .phases {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.section3 {
+  margin-top: 90px;
+}
+.section3 > ul {
+  list-style: none;
+}
+.section3 > h2 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+.section3 > ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 26px;
+  margin-top: 50px;
+}
+.referencelist > li > section > p > span {
+  font-weight: bold;
+}
+@media (max-width: 1076px) {
+  .left-colm .info-container {
+    margin-top: 190px;
+  }
+  .left-colm #imageholder {
+    width: 144px;
+    height: 144px;
+  }
+}
