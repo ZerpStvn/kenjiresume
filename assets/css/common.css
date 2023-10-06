@@ -11,165 +11,81 @@ html {
   width: 100%;
   scroll-behavior: smooth;
 }
-.row-cont {
-  display: flex;
-  flex-wrap: nowrap;
-}
+
 .global-width {
-  max-width: 1440px;
+  max-width: 1140px;
   width: 100%;
   margin: auto;
 }
-.left-colm {
-  color: white;
+.global-padding {
+  padding: 90px;
 }
-.left-colm {
-  max-width: 230px;
-  width: 100%;
-  height: inherit;
-  padding: 20px;
-  background-color: var(--main-color);
+.pesonal-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.left-colm > section {
-  position: relative;
+.pesonal-info section > h2 {
+  font-size: 40px;
 }
-.left-colm #imageholder {
-  position: absolute;
-  top: 20px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  background-color: aliceblue;
+.pesonal-info section > p {
+  font-size: 20px;
 }
-.left-colm .info-container {
-  list-style: none;
-  margin-top: 250px;
+.pesonal-info {
+  padding-bottom: 40px;
+  border-bottom: 9px solid black;
+  border-bottom-style: groove;
 }
-.left-colm .info-container > li {
+.pesonal-info img {
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+}
+.objective {
   margin-top: 30px;
 }
-.left-colm .info-container > li > section > h2 {
-  padding-bottom: 5px;
-  border-bottom: 2px solid white;
+.objective section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.left-colm .info-container .info-list-conatiner {
+.academic {
+  width: 100%;
+
+  margin-top: 80px;
+}
+.academic ul {
+  margin-top: 40px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.left-colm .info-container .info-list-conatiner > li {
-  padding: 8px 0;
+.academic .academic-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr;
 }
-.left-colm .info-container .info-list-conatiner > li > section {
-  margin-top: 20px;
-}
-.education-list > li > section > h3 {
-  font-size: 12px;
+.academic-info h3 {
+  font-style: italic;
   font-weight: 300;
 }
-.education-list > li > section > p:nth-child(2) {
-  font-size: 15px;
+.academic-info p > span {
   font-weight: bold;
 }
-.expertise-list > li {
-  list-style: circle;
-  transform: translateX(20px);
-}
-
-/* right corner */
-.right-colm {
-  padding: 30px;
-}
-.right-colm .section1 {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-.right-colm .section1 > h2 {
-  font-size: 43px;
-}
-.right-colm .section1 > p:nth-child(2) {
-  font-size: 23px;
-}
-.right-colm .section1 > p:nth-child(3) {
-  text-align: justify;
-}
-.section2 {
+.experience,
+.skills {
   margin-top: 90px;
 }
-.section2 > h2 {
-  padding-bottom: 10px;
-  border-bottom: 2px solid black;
+.experience-list,
+.skills-list {
+  margin-top: 40px;
 }
-.timeline {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: 1fr 11fr;
+.experience-list li,
+.skills-list li {
+  margin-left: 40px;
+  padding-bottom: 20px;
 }
-.timeline .timelinephase {
-  width: 2px;
-  background-color: black;
-  height: inherit;
-  position: relative;
-}
-#dot1,
-#dot2,
-#dot3 {
-  position: absolute;
-  width: 34px;
-  height: 34px;
-  border-radius: 50px;
-  border: 2px solid black;
-  background-color: white;
-  transform: translateX(-19px);
-}
-#dot2 {
-  top: 36%;
-}
-#dot3 {
-  top: 71%;
-}
-.timeline .phases {
-  list-style: none;
-}
-.timeline .phases > li > section {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.timeline .phases > li > section > p:nth-child(3) {
-  text-align: justify;
-}
-.timeline .phases {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
-.section3 {
-  margin-top: 90px;
-}
-.section3 > ul {
-  list-style: none;
-}
-.section3 > h2 {
-  padding-bottom: 10px;
-  border-bottom: 2px solid black;
-}
-.section3 > ul {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 26px;
-  margin-top: 50px;
-}
-.referencelist > li > section > p > span {
-  font-weight: bold;
-}
-@media (max-width: 1076px) {
-  .left-colm .info-container {
-    margin-top: 190px;
-  }
-  .left-colm #imageholder {
-    width: 144px;
-    height: 144px;
-  }
+.experience-list li > p,
+.skills-list li > p {
+  margin-left: 20px;
 }
